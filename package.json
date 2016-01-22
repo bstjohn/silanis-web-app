@@ -1,0 +1,24 @@
+{
+  "name": "silanis-web-app",
+  "version": "1.0.0",
+  "description": "Test app for silanis.",
+  "scripts": {
+    "start": "http-server -a 0.0.0.0 -p 8000",
+    "test": "test"
+  },
+  "author": "Brady St. John",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bstjohn/silanis-web-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bstjohn/silanis-web-app/issues"
+  },
+  "homepage": "https://github.com/bstjohn/silanis-web-app#readme",
+  "dependencies": {
+    "angular-bootstrap": "^0.12.2",
+    "angularjs": "0.0.1",
+    "bower": "^1.7.2"
+  }
+}

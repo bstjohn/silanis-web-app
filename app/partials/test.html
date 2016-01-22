@@ -1,0 +1,7 @@
+<div>
+    <input type="text" class="form-control" placeholder="Enter session token.." ng-model="sessionToken">
+    <button ng-click="updateIFrame()" class="btn btn-primary form-control">Send to Silanis <span class="glyphicon glyphicon-send"></span></div>
+</div>
+<iframe id="silanisIFrame" ng-show="userInput" class="silanis-iframe center-block"></iframe>
+<iframe id="silanisIFrame" ng-hide="userInput" ng-src="{{catSharkUrl}}" class="silanis-iframe center-block"></iframe>
+
