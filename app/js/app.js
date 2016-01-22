@@ -1,10 +1,7 @@
-'use strict';
-
 /* App Module */
 
 var silanisWebApp = angular.module('silanisWebApp', [
   'ngRoute',
-  'silanisAnimations',
   'silanisControllers'
 ]);
 

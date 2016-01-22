@@ -1,5 +1,6 @@
 .silanis-iframe {
     border: 2px solid black;
     height: 1000px;
+    margin-top: 10px;
     width: 70%;
 }
