@@ -1,7 +1,19 @@
 <div>
-    <input type="text" class="form-control" placeholder="Enter session token.." ng-model="sessionToken">
-    <button ng-click="updateIFrame()" class="btn btn-primary form-control">Send to Silanis <span class="glyphicon glyphicon-send"></span></div>
+    <label for="sessionToken">Session Token</label>
+    <input id="sessionToken" type="text" class="form-control" placeholder="Enter session token.." ng-model="sessionToken">
+    <h4>Or..</h4>
+    <div class="row">
+        <div class="col-lg-6">
+            <label for="packageId">Package Id</label>
+            <input id="packageId" type="text" class="form-control" placeholder="Enter package id.." ng-model="packageId">
+        </div>
+        <div class="col-lg-6">
+            <label for="documentId">(Optional) Document Id</label>
+            <input id="documentId" type="text" class="form-control" placeholder="Enter document id.." ng-model="documentId">
+        </div>
+    </div>
+    <button ng-click="updateIFrame()" class="btn btn-primary form-control">Send to Silanis <span class="glyphicon glyphicon-send"></span>
 </div>
 <iframe id="silanisIFrame" ng-show="userInput" class="silanis-iframe center-block"></iframe>
-<iframe id="silanisIFrame" ng-hide="userInput" ng-src="{{catSharkUrl}}" class="silanis-iframe center-block"></iframe>
+<iframe id="catSharkIFrame" ng-hide="userInput" ng-src="{{catSharkUrl}}" class="silanis-iframe center-block"></iframe>
 
