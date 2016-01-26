@@ -14,6 +14,8 @@
     </div>
     <button ng-click="updateIFrame()" class="btn btn-primary form-control">Send to Silanis <span class="glyphicon glyphicon-send"></span>
 </div>
-<iframe id="silanisIFrame" ng-show="userInput" class="silanis-iframe center-block"></iframe>
-<iframe id="catSharkIFrame" ng-hide="userInput" ng-src="{{catSharkUrl}}" class="silanis-iframe center-block"></iframe>
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe id="silanisIFrame" ng-show="userInput" class="silanis-iframe center-block"></iframe>
+    <iframe id="catSharkIFrame" ng-hide="userInput" ng-src="{{catSharkUrl}}" class="silanis-iframe center-block"></iframe>
+</div>
 
