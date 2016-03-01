@@ -43,6 +43,8 @@ silanisControllers.controller('testCtrl', ['$scope', '$sce',
                 $scope.invalidPin = false;
             };
 
+            $scope.pinLength = 5;
+
             $scope.formSubmitted = false;
             hideWarnings();
 
@@ -59,10 +61,12 @@ silanisControllers.controller('testCtrl', ['$scope', '$sce',
                     $scope.errorMessage = 'Invalid PIN. Please try again.';
                     $scope.formSubmitted = false;
                     $scope.invalidPin = true;
+                    // TODO: Select input text / focus on input field
                 }, 5000);
             };
 
             $scope.$watch('pin', function (newValue, oldValue) {
+                // TODO: Hide warnings and setPrestine form when input box is empty
                 hideWarnings();
                 if (newValue > 99999 || angular.equals(newValue, 0)) {
                     $scope.pin = oldValue;
