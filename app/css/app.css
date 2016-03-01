@@ -3,3 +3,30 @@
     height: 1000px;
     width: 70%
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+#pin-input {
+/*    font-size: 2.0em;
+    height: 1.7em;
+    font-family: sans-serif, monospace;*/
+}
+
+.pin-form {
+    background: ghostwhite;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    /*box-shadow: 10px 10px 5px #888888;*/
+    margin: auto;
+    padding: 20px 20px 20px 20px;
+    width: 40%;
+}
+
+.info-links {
+    margin-bottom: 0;
+}

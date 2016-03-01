@@ -12,6 +12,10 @@ silanisWebApp.config(['$routeProvider',
         templateUrl: 'partials/test.html',
         controller: 'testCtrl'
       }).
+      when('/pinPage', {
+        templateUrl: 'partials/pinPage.html',
+        controller: 'pinPageCtrl'
+      }).
       otherwise({
         redirectTo: '/test'
       });
