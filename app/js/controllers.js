@@ -64,7 +64,7 @@ silanisControllers.controller('testCtrl', ['$scope', '$sce',
                     // TODO: Select input text / focus on input field
                 }, 5000);
             };
-
+            
             $scope.$watch('pin', function (newValue, oldValue) {
                 // TODO: Hide warnings and setPrestine form when input box is empty
                 hideWarnings();
