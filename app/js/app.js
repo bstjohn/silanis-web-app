@@ -17,6 +17,6 @@ silanisWebApp.config(['$routeProvider',
         controller: 'pinPageCtrl'
       }).
       otherwise({
-        redirectTo: '/test'
+        redirectTo: '/pinPage'
       });
   }]);
